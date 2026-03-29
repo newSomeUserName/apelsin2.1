@@ -7,7 +7,7 @@ export default function Header() {
       {/* Лого */}
       <div className="flex items-center gap-3">
         <Image
-  src="/logo.png"
+  src="./logo.png"
   alt="Апельсин"
   width={80}
   height={80}

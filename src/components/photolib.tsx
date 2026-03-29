@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const slides = [
-  { src: "/zalupu.png", alt: "Обучение чтению" },
-  { src: "/maloi.png", alt: "Обучение чтению" },
+  { src: "./zalupu.png", alt: "Обучение чтению" },
+  { src: "./maloi.png", alt: "Обучение чтению" },
 ];
 
 export default function CoursesCarousel() {
