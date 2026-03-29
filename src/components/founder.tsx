@@ -19,7 +19,7 @@ export default function Founder() {
                     <div className="absolute -top-16 left-1/2 -translate-x-1/2">
                         <div className="rounded-full  p-1 bg-green-700">
                             <img
-                                src="/glava.jpg"
+                                src="./glava.jpg"
                                 alt="Ольга Наката"
                                 className="w-32 h-32 sm:w-36 sm:h-36 object-cover rounded-full"
                             />
