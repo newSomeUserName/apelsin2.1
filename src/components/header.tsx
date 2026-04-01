@@ -1,10 +1,21 @@
 import Image from "next/image";
 
+import { Montserrat } from 'next/font/google';
+const montserrat = Montserrat({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-montserrat',
+});
+
+
+
+
+
+
 export default function Header() {
   return (
-    <header className="w-full justify-center bg-[#FFE783] px-2 rounded-xl py-4 flex items-center">
+    <header className={`${montserrat.variable} w-full justify-center bg-[#FFE783] px-2 rounded-xl py-4 flex items-center`}>
 
-      {/* Лого */}
       <div className="flex items-center gap-3">
         <Image
   src="./logo.png"
@@ -17,7 +28,10 @@ export default function Header() {
 
       <div className="text-[#013D10] font-bold leading-tight flex flex-col items-center">
 
-        <h1 className="md:text-xl text-[14px] text-center w-fit">
+        <h1
+    className="md:text-xl text-[13px] text-center w-fit font-bold"
+    style={{ fontFamily: 'var(--font-montserrat)' }}
+  >
           МЕЖДУНАРОДНЫЙ
           ОНЛАЙН-ЦЕНТР<br />
           РАЗВИТИЯ РЕЧИ ДЛЯ БИЛИНГВОВ<br />
